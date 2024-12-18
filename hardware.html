@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VitalGuard</title>
+    <link rel="stylesheet" type="text/css" href="css/style_hardware.css">
+    <script src="js/js.js"></script>
+</head>
+<body>
+    <div id="container1">
+        <div id="sombra"></div>
+        <div id="sombra"></div>
+        <div id="sombra2"></div>
+        <div id="sombra2"></div>
+        <div id="cabecario">
+            <div id="botao_menu" (click)="alternarMenu()"></div>
+            <div id="logo_empresa">
+                <img src="./assets/logoEmpresa5.png" id="logo">
+                <p id="logo_txt">Vital Guard</p>
+            </div>
+            <div id="lista_cabecario">
+                <ul>
+                    <a href="index.html">
+                        <li>
+                            Página Inicial
+                            <div class="linha_lista"></div>
+                        </li>
+                    </a>
+                    <a href="hardware.html">
+                        <li>
+                            Hardware
+                            <div class="linha_lista"></div>
+                        </li>
+                    </a>
+                    <a href="galeria.html">
+                        <li>
+                            Galeria
+                            <div class="linha_lista"></div>
+                        </li>
+                    </a>
+                    <a href="sobre.html">
+                        <li>
+                            Sobre Nós
+                            <div class="linha_lista"></div>
+                        </li>
+                    </a>
+                </ul>
+            </div>
+            <a href="aplicativo.html">
+                <div id="botao_cadastro"></div>
+            </a>
+        </div>
+        <div id="info">
+            <div class="informacoes inf1">
+                <div class="informacoes_div">
+                    <img src="./assets/relogio2.png" class="info_img">
+                    <p class="info_titulo">Alimentado pelo ESP32</p>
+                    <p class="info_txt">ESP32-PICO-D4 em seu núcleo, com WiFi/Bluetooth LE integrado e compatibilidade com Arduino, MicroPython e ESP-IDF.</p>
+                </div>
+                <div class="informacoes_div">
+                    <img src="./assets/relogio3.png" class="info_img">
+                    <p class="info_titulo">Tela de E-Paper</p>
+                    <p class="info_txt">Bela tela E-Paper com resolução de 200x200 pixels. Visibilidade sem reflexos sob luz solar intensa, ângulo de visão de quase 180 graus e consumo de energia ultrabaixo.</p>
+                </div>
+            </div>
+            <div id="relogio"></div>
+            <div class="informacoes inf2">
+                <div class="informacoes_div">
+                    <img src="./assets/relogio4.png" class="info_img">
+                    <p class="info_titulo">Duração da bateria</p>
+                    <p class="info_txt">Apenas com a contagem de horas, há uma duração de bateria de 5 a 7 dias, enquanto que, com a busca de dados por WiFi/Bluetooth, há uma duração de 2 a 3 dias. </p>
+                </div>
+                <div class="informacoes_div">
+                    <img src="./assets/relogio5.png" class="info_img">
+                    <p class="info_titulo">BPM e Pressão Arterial</p>
+                    <p class="info_txt">Através do sensor MAX30102 embutido no relógio, monitoramentos constantes são feitos e, por meio da conexão com nosso aplicativo, seus parentes estarão informados sobre seu estado.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="links">
+        <a href='https://www.instagram.com/vitalguard_3bi'><img src="./assets/2.png" class="img_icone"></a>
+    </div>
+    
+</body>
+</html>

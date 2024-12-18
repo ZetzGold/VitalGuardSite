@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VitalGuard</title>
+    <link rel="stylesheet" type="text/css" href="css/style_galeria.css">
+    <script src="js/js.js" defer></script>
+</head>
+<body>
+    <div id="container1">
+        <div id="sombra"></div>
+        <div id="sombra"></div>
+        <div id="sombra2"></div>
+        <div id="sombra2"></div>
+        <div id="cabecario">
+            <div id="botao_menu" onclick="alternarMenu()"></div>
+            <div id="logo_empresa">
+                <img src="./assets/logoEmpresa5.png" id="logo">
+                <p id="logo_txt">Vital Guard</p>
+            </div>
+            <div id="lista_cabecario">
+                <ul>
+                    <a href="index.html">
+                        <li>Página Inicial<div class="linha_lista"></div></li>
+                    </a>
+                    <a href="hardware.html">
+                        <li>Hardware<div class="linha_lista"></div></li>
+                    </a>
+                    <a href="galeria.html">
+                        <li>Galeria<div class="linha_lista"></div></li>
+                    </a>
+                    <a href="sobre.html">
+                        <li>Sobre Nós<div class="linha_lista"></div></li>
+                    </a>
+                </ul>
+            </div>
+            <a href="aplicativo.html">
+                <div id="botao_cadastro"></div>
+            </a>
+        </div>
+        <div id="info">
+            <div class="info_cont">
+                <p class="gal_tit">Componentes da Pulseira</p>
+                <p class="gal_txt">Criação do Hardware da pulseira e implementação de suas funcionalidades!</p>
+            </div>
+            <div class="info_cont">
+                <div class="carousel">
+                    <div class="carousel-inner">
+                      <img id="carousel-image" src="./assets/ex4.png" alt="Imagem do carrossel">
+                    </div>
+                    <button class="btn-prev" onclick="prevImage()"><</button>
+                    <button class="btn-next" onclick="nextImage()">></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="info3">
+        <div id="info3_cont">
+            <div class="info_cont">
+                <div class="carousel">
+                    <div class="carousel-inner app">
+                    <img id="carousel-image2" src="./assets/TelasApp/1Carregamento.png" alt="Imagem do carrossel">
+                    </div>
+                    <button class="btn-prev" onclick="prevImage2()"><</button>
+                    <button class="btn-next" onclick="nextImage2()">></button>
+                </div>
+            </div>
+            <div class="info_cont">
+                <p class="gal_tit">Protótipo do Aplicativo</p>
+                <p class="gal_txt">Criação do layout das telas para a criação do aplicativo focado dedicado!</p>
+            </div>
+        </div>
+    </div>
+    <div id="links">
+        <a href='https://www.instagram.com/vitalguard_3bi'><img src="./assets/2.png" class="img_icone"></a>
+    </div>    
+</body>
+</html>

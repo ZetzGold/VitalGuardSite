@@ -1,0 +1,579 @@
+@font-face {
+  font-family: Titulo;
+  src: url('../assets/Oswald-VariableFont_wght.ttf');
+}
+/*Index*/
+*{
+  z-index: 3;
+}
+p{
+  margin-block-end: 2em;
+  margin-block-start: 2em;
+}
+body{
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+#container1{
+  width: 100%;
+  height: auto;
+  background-image: url('../assets/fundo9.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+}
+#cabecario{
+  width: 85%;
+  height: 4vw;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  flex-direction: row;
+  border-bottom: 1px solid white;
+  margin-top: 0.5vw;
+}
+#sombra{
+  position: absolute;
+  width: 100%;
+  height: 45vw;
+  z-index: 1;
+  background: linear-gradient(to top, transparent, rgba(0, 0, 0, 0.42));
+}
+#sombra2{
+  position: absolute;
+  width: 100%;
+  height: 60vw;
+  top: -3vw;
+  z-index: 1;
+  background: linear-gradient(to bottom, transparent, rgb(0, 0, 0));
+}
+#preto{
+  position: absolute;
+  width: 150px;
+  height: 40px;
+  background-color: black;
+  top: 53.5vw;
+  left: 82.9vw;
+  z-index: 10;
+}
+#modelo3d{
+  width: 100%;
+  height: 100%;
+}
+#logo_empresa{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: row;
+}
+#logo{
+  height: 3.5vw;
+  margin-bottom: 1em;
+}
+#logo_txt{
+  color: white;
+  font-family:'Times New Roman', Times, serif;
+  font-size: 2vw;
+  font-weight: bold;
+  margin-block-end: 0.35em;
+  margin-block-start: 0em;
+}
+#lista_cabecario{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: center;
+  margin-right: 22%;
+  margin-left: 12%;
+}
+#lista_cabecario ul{
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+}
+#lista_cabecario ul li{
+  font-size: 1.2vw;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0 1vw;
+  display: flex;
+  flex-direction: column;
+}
+#lista_cabecario ul a{
+  text-decoration: none;
+  color: white;
+}
+.linha_lista{
+  width: 30%;
+  height: 0.1em;
+  margin-top: 0.1em;
+  background-color: white;
+  transition: ease-in-out 0.4s;
+}
+#lista_cabecario ul li:hover .linha_lista{
+  width: 100%;
+}
+#botao_cadastro{
+  height: 4em;
+  width: 4em;
+  margin-bottom: 0.5vw;
+  background-image: url(../assets/simb_pessoa.png);
+  background-size: 100% 100%;
+  background-position: center;
+  border: 1px solid white;
+  border-radius: 900px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: ease-in-out 0.4s;
+}
+#botao_cadastro:hover{
+  background-color: #03BF96;
+}
+.linha_horizontal{
+  width: 70%;
+  height: 8%;
+  border: 0.5px solid white;
+  border-radius: 100px;
+  margin: 0.1vw 0;
+}
+#info{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: row;
+  margin-top: 2vw;
+  width: 85%;
+  height: 50vw;
+}
+#info_questions{
+  width: 100%;
+  height: 30vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: row;
+  background-color: black;
+}
+.card {
+  position: relative;
+  width: 20vw;
+  height: 30vw;
+  background: #03BF96;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  font-weight: bold;
+  border-radius: 15px;
+  cursor: pointer;
+  margin-left: 2vw;
+  margin-right: 2vw;
+  padding: 1vw;
+  line-height: 2vw;
+}
+
+.card::before,
+.card::after {
+  position: absolute;
+  content: "";
+  width: 20%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  padding: 2vw;
+  font-weight: bold;
+  background-color: #04e0b1;
+  transition: all 0.5s;
+}
+
+.card::before {
+  top: 0;
+  right: 0;
+  border-radius: 0 15px 0 100%;
+}
+
+.card::after {
+  bottom: 0;
+  left: 0;
+  border-radius: 0 100%  0 15px;
+}
+
+.card:hover::before,
+.card:hover:after {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  transition: all 0.5s;
+}
+
+.card:hover:after {
+  content: "A conexão deve ser realizada através do Bluetooth.";
+}
+
+.card_question2:hover:after {
+  content: "O sensor de queda utiliza tecnologia de detecção de movimento para identificar quedas. Caso uma queda seja detectada, a pulseira enviará um alerta para contatos de emergência previamente configurados.";
+}
+
+.card_question3:hover:after {
+  content: "A pulseira pode funcionar de forma independente para medir batimentos cardíacos e pressão arterial, mas a conexão com a internet é necessária para sincronizar os dados com o aplicativo e enviar alertas.";
+}
+
+.card_question4:hover:after {
+  content: "Se houver anormalidade nos dados vitais, um alerta com os detalhes e leituras é enviado instantaneamente para os parentes cadastrados.";
+}
+#textos{
+  width: 100vw;
+  text-align: center;
+}
+.titulo{
+  font-size: 4vw;
+  color: #4ff8d3;
+  font-family: Titulo;
+  line-height: 1em;
+  margin-block-end: 0em;
+  margin-block-start: 0em;
+  -webkit-text-stroke: 1px;
+  -webkit-text-stroke-color: black;
+}
+.txt{
+  font-size: 1.3vw;
+  line-height: 1.5em;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+.infos{
+  width: 30%;
+  height: 11vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: row;
+  margin: 0 4vw;
+}
+.icone{
+  width: 19%;
+}
+.infos_txt{
+  padding-left: 0.5vw;
+  text-align: left;
+  color: white;
+}
+.infos_titulo{
+  font-size: 2vw;
+  margin-block-end: 0.4em;
+}
+.infos_texto{
+  margin-block-start: 0em;
+  font-size: 1vw;
+}
+#links{
+  width: 100%;
+  background-color: black;
+  height: 10vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: row;
+}
+.img_icone{
+  margin: 0 2vw;
+  height: 5vw;
+}
+
+
+#botao_menu{
+  display: none;
+}
+#menu{
+  display: none;
+}
+#menu_fechado{
+  display: none;
+}
+#opacidade{
+  display:none
+}
+#opacidade2{
+  display:none
+}
+#botao_sair{
+  display: none;
+}
+
+@media screen and (max-width: 750px){
+
+#cabecario{
+  width: 100%;
+  height: 15vw;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  flex-direction: row;
+  background-color: #03BF96;
+}
+#lista_cabecario{
+  display: none;
+}
+#logo_txt{
+  font-size: 8vw;
+  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-width: 0.2vw;
+  margin-block-end: 0em;
+  margin-block-start: 0em;
+}
+#logo{
+  height: 12vw;
+  margin-top: 2vw;
+}
+#botao_cadastro{
+  margin-left: 11vw;
+  top: 3.4vw;
+  height: 9vw;
+  width: 9vw;
+  position:absolute
+}
+#botao_menu{
+  margin-right: 85vw;
+  top: 3.4vw;
+  height: 9vw;
+  width: 9vw;
+  position:absolute;
+  margin-bottom: 0.5vw;
+  background-image: url(../assets/simb_menu.png);
+  background-size: 100% 100%;
+  background-position: center;
+  border: 1px solid white;
+  border-radius: 900px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: ease-in-out 0.4s;
+}
+#menu, #menu_fechado{
+  display: flex;
+  position: fixed;
+  width: 75vw;
+  height: 100vh;
+  background-color: #03BF96;
+  z-index: 5;
+  text-align: left;
+  padding-left: 3vw;
+  padding-top: 3vw;
+  flex-direction: column;
+  transition: ease-in-out 0.4s;
+}
+#menu{
+  right: 25vw;
+}
+#menu_fechado{
+  right: 120vw;
+}
+.menu_opcao{
+  height: 10vw;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.136);
+  border-top: 2px solid rgba(255, 255, 255, 0.136);
+}
+.menu_opcao:hover{
+  background-color: #023e31;
+}
+.menu_icone{
+  height: 100%;
+  width: 10vw;
+  justify-content: center;
+  align-items: center;
+}
+.svg{
+  height: 90%;
+}
+.menu_texto{
+  font-size: 6vw;
+}
+.menu_opcao:hover .menu_texto{
+  color: white;
+}
+#opacidade, #opacidade2{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.479);
+  display: flex;
+  z-index: 4;
+  transition: ease-in-out 0.4s;
+}
+#opacidade2{
+  display: none;
+}
+#botao_sair{
+  display: flex;
+  margin-left: 43%;
+  width: 10vw;
+  justify-content: center;
+  align-items: center;
+  font-size: 7vw;
+  color: white;
+  margin-top: 10vw;
+  height: 10vw;
+  border-radius: 30%;
+  background-color: #023e31;
+}
+.menu_link{
+  color: black;
+  text-decoration: none;
+}
+.titulo{
+  font-size: 9vw;
+  color: #4ff8d3;
+  font-family: Titulo;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  line-height: 1em;
+  margin-left: 5vw;
+  margin-block-end: 0em;
+  margin-block-start: 0em;
+  -webkit-text-stroke: 1px;
+  -webkit-text-stroke-color: black;
+}
+#textos{
+  width: 100vw;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin-right: 0vw;
+}
+.txt{
+  font-size: 0vw;
+  line-height: 1em;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+#logo_info{
+  width: 25vw;
+  margin-top: 20vw;
+  border-radius: 5vw;
+}
+#sombra2{
+  position: absolute;
+  width: 100%;
+  height: 60vw;
+  top: 99.5vw;
+  z-index: 1;
+  background: linear-gradient(to bottom, transparent, rgb(0, 0, 0));
+}
+.infos{
+  width: 0%;
+  height: 0vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: row;
+  margin: 0 0vw;
+}
+.infos_titulo{
+  font-size: 0vw;
+  margin-block-end: 0em;
+}
+.infos_texto{
+  margin-block-start: 0em;
+  font-size: 0vw;
+}
+.card_txt{
+  margin-block-start: 0em;
+  width: 90%;
+  border-radius: 7px;
+  color: black;
+  font-size: 0vw;
+  transition: ease-in-out 0.5s;
+}
+#info3_titulo{
+  font-size: 8vw;
+  color: #03BF96;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-block-end: 0em;
+}
+.card_titulo{
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 7vw;
+  margin-block-start: 20vw;
+  margin-block-end: 0em;
+  line-height: 7vw;
+  font-weight: bold;
+  transition: ease-in-out 0.5s;
+  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-width: 1.5px;
+}
+#links{
+  width: 100%;
+  background-color: black;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: row;
+  padding: 9vw 0vw;
+}
+#info{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  margin-top: 5vw;
+  width: 85%;
+  height: auto;
+}
+#container1{
+  width: 100%;
+  height: 170vw;
+  background-image: url('../assets/fundo9.png');
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  background-position:right;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+}
+.img_icone{
+  margin: 0 2vw;
+  height: 15vw;
+}
+#modelo3d{
+  width: 80%;
+  height: 130vw;
+}
+#preto{
+  display: none;
+}
+}
